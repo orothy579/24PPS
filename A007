@@ -1,0 +1,21 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main(){
+    // vector 초기화
+    vector<int> v1(8,0);
+    
+    // 숫자열 입력 받기
+    for(int i=0; i<8; i++) cin >> v1[i];
+    
+    // sorting 여부 판단
+    if(is_sorted(v1.begin(), v1.end())) cout <<  "ascending";
+    else if(is_sorted(v1.begin(), v1.end(), greater<int>())) cout << "descending";
+    else cout << "mixed";
+    
+    return 0;
+}
+

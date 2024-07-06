@@ -4,6 +4,6 @@ m = max(s)
 sum =0
 
 for i in s :
-  sum += int(i)/m *100
+  sum += i/m *100
 
 print(sum/n)
